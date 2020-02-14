@@ -2,7 +2,7 @@ const  express = require('express');
 const app = express();
 const path = require('path');
 const NewsAPI = require('newsapi');
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 5000
 const newsapi = new NewsAPI('4a77e09f6b884fbb93db536ffe8ac917');
 
 let articles;
@@ -23,5 +23,5 @@ app.get('/', function(req, res) {
 
 });
 
- 
+
 app.listen(port);
